@@ -1,0 +1,35 @@
+
+.Bienvenida {
+    text-align: center;
+    padding-top: .3125rem;
+    h1{
+        font-family: "Sonsie One";
+        font-size: 3rem;
+        color: darkgray;
+    }
+    h2{
+        font-family: "Fugaz One";
+        color: darkgray;
+    }
+    h5{
+        font-family: "Fugaz One";
+        color: darkgray;
+    }
+}
+
+.ContenedorCarrusel{
+   padding: .625rem 10% .625rem 10%;
+}
+
+.PieDePagina{
+    h2{
+        text-align: center;
+        color: lightcoral;
+        font-weight: bolder;
+    }
+    h3{
+        text-align: center;
+        color: lightcoral;
+        font-weight: bolder;
+    }
+}

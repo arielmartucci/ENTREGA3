@@ -1,0 +1,80 @@
+
+.Bienvenida {
+    text-align: center;
+    padding-top: .625rem;
+    h1{
+        font-family: "Sonsie One";
+        font-size: 3rem;
+        color: darkgray;
+    }
+    h3{
+        font-family: "Fugaz One";
+        color: darkgray;
+    }
+}
+
+.ServiciosContainer {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "depilacion mesoterapia lfacial"
+        "botox masajes nutri";
+    gap: 1.25rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    div{
+        justify-items: center;
+        height: auto;
+        border-radius: 5%;
+        img{
+        border-radius: 10%;
+        padding: 0.625rem 0.625rem;
+        }
+    article{
+        padding: 5% 5%;
+    }
+    }    
+    &:nth-child(1){
+    grid-area: depilacion;
+    }
+    & :nth-child(2){
+    grid-area: mesoterapia;
+    }
+    & :nth-child(3){
+    grid-area: lfacial;
+    }
+    & :nth-child(4){
+    grid-area: botox;
+    }
+    &:nth-child(5){
+    grid-area: masajes;
+    }
+    &:nth-child(6){
+    grid-area: nutri;
+    }
+}
+
+
+/*
+
+@media(max-width:768px) {
+    .ServiciosContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+}
+
+@media(max-width:320px){
+    .Bienvenida h1 {
+    font-family: "Sonsie One";
+    font-size: 1.875rem;
+    color:darkgray;
+}
+}
+
+*/
