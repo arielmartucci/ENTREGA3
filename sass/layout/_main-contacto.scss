@@ -4,11 +4,11 @@
     padding-bottom: .9375rem;
     h1{
         font-family:"Sonsie One" ;
-        color: darkgray;
+        color: map-get($colores , gris);
     }
     H3{
         font-family:"Fugaz One" ;
-        color: darkgray;
+        color: map-get($colores, gris);
     }
 }
 .ContactoSection{
@@ -26,9 +26,9 @@
 }
 
 .BotonEnviar {
-    background-color: #ff9b9b;
+    background-color: map-get($colores, rosa);
     button:hover {
-        filter: drop-shadow(2px 2px 10px lightcoral)
+        filter: drop-shadow(2px 2px 10px map-get($colores, rosa))
     }
 }
 

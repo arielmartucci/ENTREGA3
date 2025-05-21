@@ -5,15 +5,15 @@
     h1{
         font-family: "Sonsie One";
         font-size: 3rem;
-        color: darkgray;
+        color: map-get($colores, gris);
     }
     h2{
         font-family: "Fugaz One";
-        color: darkgray;
+        color: map-get($colores, gris);
     }
     h5{
         font-family: "Fugaz One";
-        color: darkgray;
+        color: map-get($colores, gris);
     }
 }
 
@@ -24,12 +24,12 @@
 .PieDePagina{
     h2{
         text-align: center;
-        color: lightcoral;
+        color: map-get($colores, rosa);
         font-weight: bolder;
     }
     h3{
         text-align: center;
-        color: lightcoral;
+        color: map-get($colores, rosa);
         font-weight: bolder;
     }
 }
