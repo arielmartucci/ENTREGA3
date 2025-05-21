@@ -1,0 +1,103 @@
+@media(max-width: 768px) {
+    .NosotrosContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        img {
+            width: 250px;
+            height: 250px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .SectionNC {
+        padding-left: 10%;
+        padding-right: 10%;
+
+        .NumerosContainer {
+            display: flex;
+            flex-direction: row;
+            gap: 0.625rem;
+
+            div {
+                width: 200px;
+                height: 200px
+            }
+        }
+    }
+
+    .ServiciosContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+.FotosConsultorios {
+    .Grilla {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 10px repeat(5, 1fr) 1.25rem;
+        grid-template-rows: 50px repeat(5, 6.25rem) 10px;
+
+        h3 {
+            font-size: 1.875rem;
+            grid-column: 2/7;
+            grid-row: 1/2;
+            order: 2;
+        }
+
+        .Lateral {
+            grid-column: 1/4;
+            grid-row: 1 / 8;
+            width: 100%;
+            overflow: hidden;
+            order: 1;
+        }
+
+        .DiasHorarios {
+            grid-column: 2/6;
+            grid-row: 2/3;
+            order: 3;
+        }
+
+        .Consultorios {
+            grid-column: 2/7;
+            grid-row: 3/5;
+            order: 4;
+
+            img {
+                border-radius: 50%;
+                padding: 1.25rem;
+                filter: grayscale(1);
+                width: 200px;
+                height: 200px;
+            }
+
+            img:hover {
+                border-radius: 10%;
+                filter: drop-shadow(2px 2px 10px lightcoral);
+            }
+        }
+
+        iframe {
+            border-radius: 2%;
+            width: 100%;
+            height: 100%;
+            grid-column: 2/7;
+            grid-row: 5/7;
+            order: 5;
+        }
+    }
+}
+.ConsultoriosContainer {
+    div{
+        height: 15.625rem;
+        width: 12.5rem;
+    }
+}
+}
