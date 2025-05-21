@@ -1,4 +1,10 @@
 .mi-bg {
-    background-color: map-get($colores, rosa );
+    background-image: linear-gradient(to left top, #f2e7f0, #f3cfed, #f3b7eb, #f19ee8, #ee84e6);
     font-weight: bolder;
+}
+
+.navbar{
+    a:hover{
+        transform: scale(1.2);
+    }
 }

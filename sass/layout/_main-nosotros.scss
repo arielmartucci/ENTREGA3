@@ -12,56 +12,65 @@
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 1.25rem;
-    h5{
-    color: lightcoral;
-    font-weight: bolder;
+
+    h5 {
+        color: lightcoral;
+        font-weight: bolder;
     }
-    h3{
-    text-decoration: underline;
-    font-style: italic;
+
+    h3 {
+        text-decoration: underline;
+        font-style: italic;
     }
-    article{
-    padding-top: 3%;
-    padding-left: 5%;
-    padding-right: 5%;
+
+    article {
+        padding-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
-    img{
-    border-radius: 5%;
+
+    img {
+        border-radius: 5%;
     }
-    ul{
-    padding-top: 3%;
-    padding-left: 8%;
-    padding-right: 5%;
+
+    ul {
+        padding-top: 3%;
+        padding-left: 8%;
+        padding-right: 5%;
     }
 }
-.SectionNC{
-        display: flex;
-        justify-content: center;
+
+.SectionNC {
+    display: flex;
+    justify-content: center;
+
     .NumerosContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         gap: .9375rem;
-        div{
-        height: 18.75rem;
-        width: 21.875rem;
-        background-color: white;
-        border-radius: 0.625rem;
-        align-content: center;
-        justify-items: center;
-        } 
-    .NumeroGrande {
-    font-size: 3rem;
-    font-weight: bolder;
-    }
-    .PreTitulo {
-    color: lightcoral;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    }
-}
-}
 
+        div {
+            height: 18.75rem;
+            width: 21.875rem;
+            background-color: white;
+            border-radius: 0.625rem;
+            align-content: center;
+            justify-items: center;
+        }
+
+        .NumeroGrande {
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+
+        .PreTitulo {
+            color: lightcoral;
+            font-weight: bolder;
+            font-size: 1.5rem;
+        }
+    }
+}
 
 
 

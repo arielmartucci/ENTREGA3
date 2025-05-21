@@ -21,12 +21,16 @@ declaracion de fuentes
 
 */
 main {
-  background-color: #fef3e2;
+  background-image: linear-gradient(to left bottom, #f2e7f0, #f3cfed, #f3b7eb, #f19ee8, #ee84e6);
 }
 
 .mi-bg {
-  background-color: #ff9b9b;
+  background-image: linear-gradient(to left top, #f2e7f0, #f3cfed, #f3b7eb, #f19ee8, #ee84e6);
   font-weight: bolder;
+}
+
+.navbar a:hover {
+  transform: scale(1.2);
 }
 
 .Bienvenida {
@@ -60,6 +64,61 @@ main {
   text-align: center;
   color: lightcoral;
   font-weight: bolder;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card img {
+  width: 100%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover {
+  transform: rotate(-5deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__description {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.card:hover img {
+  scale: 0;
+  transform: rotate(-45deg);
 }
 
 .Bienvenida {
@@ -240,6 +299,11 @@ main {
   color: darkgray;
 }
 
+.ContactoSection {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .ContactoDivSucTrat {
   display: flex;
   gap: 1%;
@@ -338,124 +402,6 @@ main {
   order: 5;
 }
 
-/*
-
-
-.Consultorios img {
-}
-
-.Consultorios img:hover {
-
-}
-
-.Caballito {
-}
-
-.Caballito .ConsultoriosLateral {
-
-}
-
-.Caballito h3 {
-
-}
-
-.Caballito .ConsultoriosDiasHorarios {
-
-}
-
-.Caballito .Consultorios {
-}
-
-.Caballito iframe {
-}
-
-.Palermo {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(6, 1fr) 1.25rem;
-    grid-template-rows: 3.125rem repeat(8, 6.25rem) 1.25rem;
-}
-
-.Palermo .ConsultoriosLateral {
-    grid-column: 1/4;
-    grid-row: 1 / 11;
-    width: 100%;
-    overflow: hidden;
-    order: 1;
-}
-
-.Palermo h3 {
-    font-size: 1.875rem;
-    grid-column: 2/7;
-    grid-row: 1/2;
-    order: 2;
-}
-
-.Palermo .ConsultoriosDiasHorarios {
-    grid-column: 2/6;
-    grid-row: 2/3;
-    order: 3;
-}
-
-.Palermo .Consultorios {
-    grid-column: 2/7;
-    grid-row: 3/7;
-    order: 4;
-}
-
-.Palermo iframe {
-    border-radius: 2%;
-    width: 100%;
-    height: 100%;
-    grid-column: 2/7;
-    grid-row: 7/10;
-    order: 5;
-}
-
-.Olivos {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(6, 1fr) 1.25rem;
-    grid-template-rows: 3.125rem repeat(8, 6.25rem) 1.25rem;
-}
-
-.Olivos .ConsultoriosLateral {
-    grid-column: 1/4;
-    grid-row: 1 / 11;
-    width: 100%;
-    overflow: hidden;
-    order: 1;
-}
-
-.Olivos h3 {
-    font-size: 1.875rem;
-    grid-column: 2/7;
-    grid-row: 1/2;
-    order: 2;
-}
-
-.Olivos .ConsultoriosDiasHorarios {
-    grid-column: 2/6;
-    grid-row: 2/3;
-    order: 3;
-}
-
-.Olivos .Consultorios {
-    grid-column: 2/7;
-    grid-row: 3/7;
-    order: 4;
-}
-
-.Olivos iframe {
-    border-radius: 2%;
-    width: 100%;
-    height: 100%;
-    grid-column: 2/7;
-    grid-row: 7/10;
-    order: 5;
-}
-
-*/
 footer {
   display: flex;
   justify-content: space-between;
