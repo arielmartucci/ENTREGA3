@@ -3,3 +3,10 @@
     width: $valor;
 }
 
+@mixin grp($cinit, $cend, $rinit, $rend, $order){
+    grid-column-start: $cinit;
+    grid-column-end: $cend;
+    grid-row-start: $rinit;
+    grid-row-end: $rend;
+    order: $order;
+}
