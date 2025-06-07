@@ -222,6 +222,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 0.9375rem;
 }
 .SectionNC .NumerosContainer div {
@@ -284,6 +285,7 @@ main {
 .ConsultoriosContainer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 0.625rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
