@@ -217,12 +217,12 @@ main {
 .SectionNC {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .SectionNC .NumerosContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   gap: 0.9375rem;
 }
 .SectionNC .NumerosContainer div {
@@ -371,7 +371,7 @@ main {
   order: 5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .NosotrosContainer {
     display: flex;
     flex-direction: column-reverse;
@@ -467,7 +467,7 @@ main {
     width: 12.5rem;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 645px) {
   .Bienvenida h1 {
     font-family: "Sonsie One";
     font-size: 1.875rem;

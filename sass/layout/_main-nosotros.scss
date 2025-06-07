@@ -43,12 +43,11 @@
 .SectionNC {
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
     .NumerosContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        flex-wrap: wrap;
         gap: .9375rem;
 
         div {
