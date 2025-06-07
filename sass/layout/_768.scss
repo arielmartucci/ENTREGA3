@@ -1,4 +1,4 @@
-@media(max-width: 1024px) {
+@media(max-width: 1250px) {
     .NosotrosContainer {
         display: flex;
         flex-direction: column-reverse;
@@ -60,15 +60,10 @@
         .Consultorios {
             @include grp(2, 7, 3, 5, 4);
             img {
-                border-radius: 50%;
-                padding: 1.25rem;
-                filter: grayscale(1);
-                @include hw(200px);
-            }
-
-            img:hover {
                 border-radius: 10%;
                 filter: drop-shadow(2px 2px 10p map-get($colores, rosa));
+                padding: 1.25rem;
+                @include hw(200px);
             }
         }
 
